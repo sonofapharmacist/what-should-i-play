@@ -23,3 +23,6 @@ u = os.listdir(w)
 print(random.choice(u))
 
 # that's what you should play
+
+# keep the thing open so you don't have to launch a cmd
+raw_input("Press enter to exit")
