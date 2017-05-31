@@ -1,15 +1,13 @@
 #!/usr/bin/python
 
-# determine current Users folder
-import getpass
-currentUser = getpass.getuser()
-print(currentUser)
-def desktopFolder = c\Users\currentUser\Desktop
-
-# games list
 import os
-desktop = os.listdir(desktopFolder)
-
-# random chooser
+import getpass
 import random
-print(random.choice(desktop))
+
+x = 'c:\Users\\'
+y = getpass.getuser()
+z = '\\Desktop'
+w = x + y + z
+u = os.listdir(w)
+
+print(random.choice(u))
