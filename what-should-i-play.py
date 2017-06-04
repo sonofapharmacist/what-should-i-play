@@ -4,7 +4,7 @@ import os
 import getpass
 import random
 
-# find OS
+# find OS to determine Desktop path
 t = os.name
 nt = "c:\Users\\"
 posix = "/home/"
@@ -17,14 +17,8 @@ else:
 	x = posix
 	z = zposix
 
-# assuming you're in windows
-#x = 'c:\Users\\'
-
 # whodat?
 y = getpass.getuser()
-
-# assuming you're in windows
-#z = '\Desktop'
 
 # add it up
 w = x + y + z
