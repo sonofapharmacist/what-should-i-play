@@ -4,14 +4,27 @@ import os
 import getpass
 import random
 
+# find OS
+t = os.name
+nt = "c:\Users\\"
+posix = "/home/"
+znt = "\\Desktop"
+zposix = "/Desktop"
+if t == "nt":
+	x = nt
+	z = znt
+else:
+	x = posix
+	z = zposix
+
 # assuming you're in windows
-x = 'c:\Users\\'
+#x = 'c:\Users\\'
 
 # whodat?
 y = getpass.getuser()
 
 # assuming you're in windows
-z = '\\Desktop'
+#z = '\Desktop'
 
 # add it up
 w = x + y + z
